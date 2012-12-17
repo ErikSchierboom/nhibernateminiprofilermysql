@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.MiniProfiler.MySql", "NHibernate.MiniProfiler.MySql\NHibernate.MiniProfiler.MySql.csproj", "{D2B408E2-CFFD-4F9A-96BF-5FE9F4C79864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.MiniProfiler.MySql.Tests", "NHibernate.MiniProfiler.MySql.Tests\NHibernate.MiniProfiler.MySql.Tests.csproj", "{3CE6C120-1103-42BC-951C-EF41D31FD677}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2B408E2-CFFD-4F9A-96BF-5FE9F4C79864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B408E2-CFFD-4F9A-96BF-5FE9F4C79864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B408E2-CFFD-4F9A-96BF-5FE9F4C79864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B408E2-CFFD-4F9A-96BF-5FE9F4C79864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE6C120-1103-42BC-951C-EF41D31FD677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE6C120-1103-42BC-951C-EF41D31FD677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE6C120-1103-42BC-951C-EF41D31FD677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE6C120-1103-42BC-951C-EF41D31FD677}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
