@@ -14,13 +14,15 @@ Then you need to include this project in your project. You can choose between tw
 
 After you have finished these steps, you need to do just one more thing: let NHibernate know it should use our custom `ProfiledMySqlClientDriver` as the driver for MySQL connections. You can do this by setting the `Driver` property of the `Configuration` instance you are using. This can look something like this: 
 
-    var mySqlConfiguration = new Configuration();
-    mySqlConfiguration.DataBaseIntegration(c =>
-        {
-            c.Dialect<NHibernate.Dialect.MySQL5Dialect>();
-            c.Driver<ProfiledMySqlClientDriver>();
-            c.ConnectionStringName = this.ConnectionStringName;
-        });
+```c#
+var mySqlConfiguration = new Configuration();
+mySqlConfiguration.DataBaseIntegration(c =>
+    {
+        c.Dialect<NHibernate.Dialect.MySQL5Dialect>();
+        c.Driver<ProfiledMySqlClientDriver>();
+        c.ConnectionStringName = this.ConnectionStringName;
+    });
+```
 
 And you are ready to go! Any MySQL queries executed by NHibernate will now automatically be profiled by the MiniProfiler.
 
