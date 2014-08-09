@@ -1,4 +1,7 @@
 # NHibernate MySQL MiniProfiler driver
+
+[![Build status](https://ci.appveyor.com/api/projects/status/2o7nh0i7val0g0r5)](https://ci.appveyor.com/project/ErikSchierboom/nhibernateminiprofilermysql)
+
 The [MiniProfiler](http://miniprofiler.com/) library allows you to easily profile your application. It also has support for database profiles, but out of the box only Entity Framework and ADO.NET are supported. This leaves out [NHibernate](http://nhforge.org/). This project shows how to allow allow MiniProfiler to also integrate with NHibernate. The project includes a client driver for MySQL, but it is easy to modify this code to support any client NHibernate supports.
 
 ## Implementation
