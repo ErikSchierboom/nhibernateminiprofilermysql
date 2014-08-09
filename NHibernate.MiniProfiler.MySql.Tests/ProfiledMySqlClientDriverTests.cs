@@ -1,13 +1,12 @@
 ﻿namespace NHibernate.MiniProfiler.MySql.Tests
 {
-    using NUnit.Framework;
-
     using StackExchange.Profiling.Data;
 
-    [TestFixture]
+    using Xunit;
+
     public class ProfiledMySqlClientDriverTests
     {
-        [Test]
+        [Fact]
         public void CreateCommandReturnsProfiledDbCommand()
         {
             // Arrange
@@ -17,10 +16,10 @@
             var command = clientDriver.CreateCommand();
 
             // Assert
-            Assert.IsInstanceOf<ProfiledDbCommand>(command);
+            Assert.IsType<ProfiledDbCommand>(command);
         }
 
-        [Test]
+        [Fact]
         public void CreateConnectionReturnsProfiledDbConnection()
         {
             // Arrange
@@ -30,7 +29,7 @@
             var connection = clientDriver.CreateConnection();
 
             // Assert
-            Assert.IsInstanceOf<ProfiledDbConnection>(connection);
+            Assert.IsType<ProfiledDbConnection>(connection);
         }
     }
 }
